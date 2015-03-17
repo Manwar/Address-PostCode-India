@@ -1,6 +1,7 @@
 package Address::PostCode::India;
 
-$Address::PostCode::India::VERSION = '0.06';
+$Address::PostCode::India::VERSION   = '0.07';
+$Address::PostCode::India::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
 
@@ -8,7 +9,7 @@ Address::PostCode::India - Interface to the India PinCode.
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
