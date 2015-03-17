@@ -2,6 +2,7 @@ Changes
 lib/Address/PostCode/India.pm
 lib/Address/PostCode/India/Place.pm
 Makefile.PL
+LICENSE
 MANIFEST
 MANIFEST.SKIP
 README

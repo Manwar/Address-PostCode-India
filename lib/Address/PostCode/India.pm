@@ -1,6 +1,6 @@
 package Address::PostCode::India;
 
-$Address::PostCode::India::VERSION = '0.05';
+$Address::PostCode::India::VERSION = '0.06';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Address::PostCode::India - Interface to the India PinCode.
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 
@@ -26,7 +26,7 @@ our $BASE_URL = 'http://getpincodes.info/api.php';
 
 =head1 DESCRIPTION
 
-The API service is provided by L<website|http://getpincodes.info/apidetail.php>.
+The API service  is provided by L<website|http://getpincodes.info/apidetail.php>.
 
 A Postal Index Number or PIN or Pincode is the post office numbering or post code
 system used by India Post, the Indian postal administration. The code is 6 digits
@@ -38,42 +38,42 @@ second digit indicates the sub-region, and  the third digit indicates the sortin
 district within the region.The final three digits are assigned to individual post
 offices.
 
-    +-------------------------+-----------------------------+
-    | First 2/3 Digits of PIN | Postal Circle               |
-    +-------------------------+-----------------------------+
-    | 11                      | Delhi                       |
-    | 12 and 13               | Haryana                     |
-    | 14 to 15                | Punjab                      |
-    | 16                      | Chandigarh                  |
-    | 17                      | Himachal Pradesh            |
-    | 18 to 19                | Jammu and Kashmir           |
-    | 20 to 28                | Uttar Pradesh/Uttrakhand    |
-    | 30 to 34                | Rajasthan                   |
-    | 36 to 39                | Gujarat                     |
-    | 40                      | Goa                         |
-    | 40 to 44                | Maharashtra                 |
-    | 45 to 48                | Madhya Pradesh              |
-    | 49                      | Chhattisgarh                |
-    | 50 to 53                | Andhra Pradesh              |
-    | 56 to 59                | Karnataka                   |
-    | 60 to 64                | Tamil Nadu                  |
-    | 67 to 69                | Kerala                      |
-    | 682                     | Lakshadweep (Islands)       |
-    | 70 to 74                | West Bengal                 |
-    | 744                     | Andaman and Nicobar Islands |
-    | 75 to 77                | Odisha                      |
-    | 78                      | Assam                       |
-    | 79                      | Arunachal Pradesh           |
-    | 793, 794, 783123        | Meghalaya                   |
-    | 795                     | Manipur                     |
-    | 796                     | Mizoram                     |
-    | 799                     | Tripura                     |
-    | 80 to 85                | Bihar and Jharkhand         |
-    +-------------------------+-----------------------------+
+    +-------------------------+-------------------------------------------------+
+    | First 2/3 Digits of PIN | Postal Circle                                   |
+    +-------------------------+-------------------------------------------------+
+    | 11                      | Delhi                                           |
+    | 12 and 13               | Haryana                                         |
+    | 14 to 15                | Punjab                                          |
+    | 16                      | Chandigarh                                      |
+    | 17                      | Himachal Pradesh                                |
+    | 18 to 19                | Jammu and Kashmir                               |
+    | 20 to 28                | Uttar Pradesh/Uttrakhand                        |
+    | 30 to 34                | Rajasthan                                       |
+    | 36 to 39                | Gujarat                                         |
+    | 40                      | Goa                                             |
+    | 40 to 44                | Maharashtra                                     |
+    | 45 to 48                | Madhya Pradesh                                  |
+    | 49                      | Chhattisgarh                                    |
+    | 50 to 53                | Andhra Pradesh                                  |
+    | 56 to 59                | Karnataka                                       |
+    | 60 to 64                | Tamil Nadu                                      |
+    | 67 to 69                | Kerala                                          |
+    | 682                     | Lakshadweep (Islands)                           |
+    | 70 to 74                | West Bengal                                     |
+    | 744                     | Andaman and Nicobar Islands                     |
+    | 75 to 77                | Odisha                                          |
+    | 78                      | Assam                                           |
+    | 79                      | Arunachal Pradesh                               |
+    | 793, 794, 783123        | Meghalaya                                       |
+    | 795                     | Manipur                                         |
+    | 796                     | Mizoram                                         |
+    | 799                     | Tripura                                         |
+    | 80 to 85                | Bihar and Jharkhand                             |
+    +-------------------------+-------------------------------------------------+
 
 =head1 METHODS
 
-=head2 details()
+=head2 details($pin_code)
 
 It  returns  an object of type L<Address::PostCode::India::Place> on success. The
 only parameter requires is the 6-digits pin code.
@@ -151,8 +151,8 @@ L<http://search.cpan.org/dist/Address-PostCode-India/>
 
 Copyright (C) 2014 - 2015 Mohammad S Anwar.
 
-This  program  is  free software; you can redistribute it and/or modify it under
-the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
+This program  is  free software; you can redistribute it and / or modify it under
+the  terms  of the the Artistic License (2.0). You may obtain  a copy of the full
 license at:
 
 L<http://www.perlfoundation.org/artistic_license_2_0>

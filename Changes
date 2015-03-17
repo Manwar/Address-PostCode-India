@@ -1,5 +1,10 @@
 Revision history for Address-PostCode-India
 
+0.06  2015-03-17T18:10:00+01:00
+      - Added LICENSE file.
+      - Upgraded to use Address::PostCode::UserAgent 0.04.
+      - Tidied up pod document in general.
+
 0.05  2015-01-16T14:39:25+01:00
       - Removed SIGNATURE file.
       - Updated MANIFEST.SKIP file to ignore folder 'eumm/'.
