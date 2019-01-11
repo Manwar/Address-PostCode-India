@@ -29,6 +29,10 @@ WriteMakefile(
     clean => { FILES => 'Address-PostCode-India-*' },
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
+        provides    => {
+            'Address::PostCode::India'        => { file => 'lib/Address/PostCode/India.pm'      , version => '0.10' },
+            'Address::PostCode::India::Place' => { file => 'lib/Address/PostCode/India/Place.pm', version => '0.10' },
+        },
         resources => {
             repository => {
                 type => 'git',
