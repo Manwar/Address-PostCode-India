@@ -1,5 +1,8 @@
 Revision history for Address-PostCode-India
 
+0.11  2019-01-12T06:40:00+01:00
+      - Used namespace::autoclean instead.
+
 0.10  2019-01-11T12:10:00+01:00
       - Added key 'provides' as suggested by CPANTS.
 
