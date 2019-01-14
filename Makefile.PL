@@ -30,8 +30,8 @@ WriteMakefile(
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Address::PostCode::India'        => { file => 'lib/Address/PostCode/India.pm'      , version => '0.11' },
-            'Address::PostCode::India::Place' => { file => 'lib/Address/PostCode/India/Place.pm', version => '0.11' },
+            'Address::PostCode::India'        => { file => 'lib/Address/PostCode/India.pm'      , version => '0.12' },
+            'Address::PostCode::India::Place' => { file => 'lib/Address/PostCode/India/Place.pm', version => '0.12' },
         },
         resources => {
             repository => {
